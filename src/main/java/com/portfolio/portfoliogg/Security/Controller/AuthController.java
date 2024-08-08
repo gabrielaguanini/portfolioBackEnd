@@ -32,6 +32,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @RestController
 @RequestMapping("/authentication")
 @CrossOrigin(origins = "https://portfoliogabg.web.app")
+//@CrossOrigin(origins = "*")
 @ComponentScan(basePackageClasses = MainSecurity.class)
 public class AuthController {
    
