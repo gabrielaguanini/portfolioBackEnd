@@ -60,6 +60,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
                 .antMatchers("/educacion/listaeducacion/**").permitAll()
                 .antMatchers("/habilidades/listahabilidades/**").permitAll()
                 .antMatchers("/proyectos/listaproyectos/**").permitAll()
+                .antMatchers("/explaboral/listaexplab/**").permitAll()
                 .anyRequest().authenticated()                                
                 .and()
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint)
